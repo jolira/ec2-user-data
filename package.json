@@ -1,6 +1,6 @@
 {
     "name":"ec2-user-data",
-    "version":"0.0.1",
+    "version":"0.0.2",
     "description":"access user-data from an EC2 instance",
     "keywords":["aws","ec2", "meta-data"],
     "contributors": [
