@@ -73,6 +73,7 @@
         })(key);
 
         return {
+            setTimeout:function() {},
             on:function(key) {
                 assert.equal(key, 'error');
             }
