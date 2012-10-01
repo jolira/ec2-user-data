@@ -1,8 +1,8 @@
 {
-    "name":"ec3-user-data",
+    "name":"ec2-user-data",
     "version":"0.0.1",
     "description":"access user-data from an EC2 instance",
-    "keywords":["logs"],
+    "keywords":["aws","ec2", "meta-data"],
     "contributors": [
         "Joachim Kainz <jfk@jolira.com> (http://www.jolira.com)"
     ],

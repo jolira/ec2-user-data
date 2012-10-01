@@ -12,10 +12,27 @@ If there is no ``${HOME}\.deployer.json``, the library tries to access
 particular, this library accesses information passed using the ``user-data`` field that can be passed when launching
 an instance.
 
-Example:
+Command-Line Example
+---------------------
 
 ```bash
-ec-user-data
+ubuntu@ip-10-252-172-224:/tmp$ node_modules/.bin/ec2-user-data
+config= {"aws-logging":true,"application-name":"deployer","aws-log-bucket":"tmw-tailoring-qa-logs","aws-region":"us-west-2","local-ipv4":"10.252.172.224","aws-access-key-id":"AKIAJKRUL44GH2U7AP5Q","aws-secret-access-key":"EVQKm+xVCjhwbjZOlOqxDpf+eBFSIaSK13Um0uFQ","manifest":"s3://tmw-tailoring-qa/config/tailoring.json"}
+```
+
+Node.js Example
+---------------------
+
+```JavaScript
+var config = require("ec-user-data");
+
+return config(function (err, config) {
+   if (err) {
+       return console.error("retrieving config failed", err);
+   }
+
+    console.log("config=", JSON.stringify(config));
+});
 ```
 
 License
