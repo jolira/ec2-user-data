@@ -1,0 +1,11 @@
+.cache
+.DS_Store
+node_modules
+.nide
+.idea
+*~
+*.log
+.idea
+.project
+.buildpath
+.settings

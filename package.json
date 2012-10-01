@@ -1,0 +1,36 @@
+{
+    "name":"ec3-user-data",
+    "version":"0.0.1",
+    "description":"access user-data from an EC2 instance",
+    "keywords":["logs"],
+    "contributors": [
+        "Joachim Kainz <jfk@jolira.com> (http://www.jolira.com)"
+    ],
+    "repository":{
+        "url":"https://github.com/jolira/logviewer.git",
+        "type":"git"
+    },
+    "bin":{
+        "ec2-user-data":"bin/config.js"
+    },
+    "dependencies":{
+        "batch":"*"
+    },
+    "devDependencies":{
+        "horaa":"*",
+        "vows":"*",
+        "jake":"*"
+    },
+    "scripts":{
+        "test":"jake test",
+        "prepublish":"npm prune"
+    },
+    "bugs":{
+        "mail":"dev@jolira.com",
+        "url":"http://github.com/jolira/logviewer/issues"
+    },
+    "main":"lib/config",
+    "engines":{
+        "node":">= 0.8.0"
+    }
+}
