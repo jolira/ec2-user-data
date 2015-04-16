@@ -7,7 +7,7 @@
         "Joachim Kainz <jfk@jolira.com> (http://www.jolira.com)"
     ],
     "repository":{
-        "url":"https://github.com/jolira/logviewer.git",
+        "url":"https://github.com/jolira/ec2-user-data.git",
         "type":"git"
     },
     "bin":{
@@ -27,7 +27,7 @@
     },
     "bugs":{
         "mail":"dev@jolira.com",
-        "url":"http://github.com/jolira/logviewer/issues"
+        "url":"http://github.com/jolira/ec2-user-data/issues"
     },
     "main":"lib/config",
     "engines":{
